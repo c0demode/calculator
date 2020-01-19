@@ -2,9 +2,9 @@ package com.walderman.calculator;
 
 public class Calculator {
 
-    private double workingNumber;
-    private StringBuilder displayNumber;
-    private StringBuilder displayHistory;
+    public double workingNumber;
+    public StringBuilder displayNumber;
+    public StringBuilder displayHistory;
 
     /**
      * Returns the sum of a + b
@@ -12,7 +12,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    private double add(double a, double b){
+    public double add(double a, double b){
         return a + b;
     }
 
@@ -22,7 +22,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    private double subtract(double a, double b){
+    public double subtract(double a, double b){
         return a - b;
     }
 
@@ -32,7 +32,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    private double multiply(double a, double b){
+    public double multiply(double a, double b){
         return a * b;
     }
 
@@ -42,7 +42,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    private double divide(double a, double b){
+    public double divide(double a, double b){
         return a / b;
     }
 
@@ -52,7 +52,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    private double modulus(double a, double b){
+    public double modulus(double a, double b){
         return a % b;
     }
 
@@ -62,7 +62,7 @@ public class Calculator {
      * @param a
      * @return
      */
-    private double sqroot(double a){
+    public double sqroot(double a){
         return Math.sqrt(a);
     }
 
@@ -71,16 +71,17 @@ public class Calculator {
      * @param a
      * @return
      */
-    private double powerOf(double a, double b){
+    public double powerOf(double a, double b){
         return Math.pow(a, b);
     }
 
-    private void clear(){
+    public void clear(){
         workingNumber = 0;
 
         //reset the displaynumber variables
         displayNumber.setLength(0);
         displayHistory.setLength(0);
     }
+
 
 }
